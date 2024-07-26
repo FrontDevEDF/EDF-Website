@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El de Fiar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" async="" src="//code.tidio.co/jjbmsg8samtvsuhtt5crs2q49rznxxcb.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="./images/logo-edf.svg" alt="El de Fiar Logo">
+        </div>
+        <div class="navbar-toggle">
+            <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+            </svg>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        <a href="https://credito.eldefiar.com/" class="navbar-btn btn">Solicita Tu Crédito</a>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul class="mobile-links">
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <a href="https://credito.eldefiar.com/" class="btn">Solicita Tu Crédito</a>
+        </ul>
+    </div>
+
+
+
+
+    <div class="hero-banner">
+        <video autoplay muted loop id="hero-video">
+            <source src="images/top_edf_video.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="hero-content">
+            <h2>EL DE FIAR</h2>
+            <h1>DECIDE COMO MANEJAR TU DINERO</h1><br>
+            <a href="https://credito.eldefiar.com/" class="btn">Solicita Tu Crédito</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-simulator">
+        <div class="simulator-content">
+            <div class="simulator-text">
+                <form id="formularioPrestamo" action="">
+                    <h3>Simula Tu Préstamo</h3>
+                    <p>Nos ajustamos a tus necesidades</p>
+                    <label for="">¿Cuánto dinero necesitas?</label>
+                    <p>&nbsp</p>
+                    <input type="number" id="monto" name="monto" step="0.01" placeholder="$" required>
+        
+                    <select id="plazos" name="plazos" required>
+                        <option value="">¿A cuántas quincenas quieres pagarlo?</option>
+                        <option value="9">9</option>
+                        <option value="12">12</option>
+                        <option value="18">18</option>
+                    </select>
+                    <input type="submit" value="Cotizar">
+                </form>
+            </div>
+            <div class="simulator-info">
+                <div class="column-one">
+                    <div class="one"></div>
+                    <div class="two">Nuestra mejor tasa</div>
+                    <div class="three">Nuestra tasa promedio</div>
+                    <div class="four">Tasa SOFOMES</div>
+                </div>
+                <div class="column-two">
+                    <div class="one">Tasa de interés anual:</div>
+                    <div class="two">1.98%</div>
+                    <div class="three">2.98%</div>
+                    <div class="four">3.98%</div>
+                </div>
+                <div class="column-three">
+                    <div class="one">Pago quincenal:</div>
+                    <div class="two" id="one"></div>
+                    <div class="three" id="two"></div>
+                    <div class="four" id="three"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+    <div class="card-container">
+        <div class="card">
+            <img src="./images/creditos-personales.png" alt="Créditos Personales">
+            <div class="card-info"><br>
+                <h3>Créditos Personales</h3>
+                <p class="card-text">Créditos personales con tasas competitivas a plazos que se ajustan a tus necesidades.</p>
+            </div>
+        </div>
+            <div class="card">
+                <img src="./images/arrendamientos.png" alt="Arrendamientos">
+                <div class="card-info"><br>
+                    <a href="./arrendamiento.html" rel="noopener noreferrer">
+                        <h3>Arrendamientos</h3>
+                    </a>
+                    <p class="card-text">Créditos personales con tasas competitivas a plazos que se ajustan a tus necesidades.</p>
+                </div>
+            </div>
+        <div class="card">
+            <img src="./images/creditos-empresariales.png" alt="Créditos Empresariales">
+            <div class="card-info"><br>
+                <h3>Créditos Empresariales</h3>
+                <p class="card-text">Créditos personales con tasas competitivas a plazos que se ajustan a tus necesidades.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/brands-one.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/brands-two.png" style="width:100%">
+        </div>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+
+
+    <div class="hero-banner">
+        <video autoplay muted loop id="hero-video">
+            <source src="images/mid_edf_video.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+
+
+
+
+
+
+
+    <div class="container-clientes">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="image-container">
+                        <div class="about-us-container">
+                            <h2>¿Quiénes somos?</h2>
+                            <p>El de Fiar es una Institución Financiera Mexicana con más de 10 años de experiencia en el Sector Financiero Mexicano, siempre enfocada a ofrecer los mejores productos financieros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container-2">
+                        <div class="container-vision">
+                            <h3>Visión</h3>
+                            <p>Innovación, Objetividad, Responsabilidad, Honestidad, Eficiencia, Transparencia.</p>
+                        </div>
+                        <div class="container-mision">
+                            <h3>Misión</h3>
+                            <p>Apoyar a nuestros clientes en el ámbito económico a través de créditos personales y empresariales. Cumplir con los más altos estándares de calidad y responsabilidad social.</p>
+                        </div>
+                        <div class="container-valores">
+                            <h3>Valores</h3>
+                            <p>Ser una empresa líder dentro del Sector Financiero Mexicano.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-btn">
+                <button class="carousel-control prev">&lt;</button>
+                <button class="carousel-control next">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="contact-container">
+        <div class="form-container" id="contacto">
+            <form action="https://formsubmit.co/soporte@eldefiar.com" method="POST">
+                <select id="tipo_credito" name="tipo_credito" required>
+                    <option value="">Selecciona el tipo de crédito</option>
+                    <option value="credito_personal">Crédito Personal</option>
+                    <option value="credito_hipotecario">Crédito Hipotecario</option>
+                    <option value="credito_automotriz">Crédito Automotriz</option>
+                </select>
+        
+                <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Nombre Completo" required>
+        
+                <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+        
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ej. 5512345678">
+        
+                <input type="number" id="monto" name="monto" step="100" placeholder="Monto Solicitado" required>
+        
+                <input type="submit" value="Solicita Tu Crédito">
+            </form>
+        </div>
+        <div id="map">
+        </div>
+    </div>
+
+
+
+   <!--  -->
+   <div id="tidio-chat"><iframe title="Tidio Chat" id="tidio-chat-iframe" srcdoc="
+        <html lang=&quot;en&quot;>
+        <head>
+        <meta name=&quot;viewport&quot; content=&quot;width=device-width, user-scalable=no&quot;>
+        </head>
+        <body  class=&quot;awesome-iframe&quot;>
+        <div></div>
+        </body>
+        " style="display: block; border: none; position: fixed; inset: auto 9px 35px auto; width: 204px; height: 94px; opacity: 1; color-scheme: none; background: none transparent !important; margin: 0px; max-height: 100%; max-width: 100vw; transform: translateY(0px); transition: none 0s ease 0s !important; visibility: visible; z-index: 999999999 !important; border-radius: 47px 30px 47px 47px;"></iframe>
+    </div>
+    <!--  -->
+
+
+    <footer>
+        <div class="footer-section">
+            <p>El de Fiar SDLTS SA de CV SOFOM ENR</p>
+            <div class="footer-logo">
+                <img src="images/buro.svg" alt="">
+                <img src="images/cnbv.svg" alt="">
+                <img src="images/condusef.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-section">
+            <a href="aviso-de-privacidad.html"><p>Aviso de Privacidad</p></a>
+            <p>Buró de entidades financieras</p>
+            <p>UNE Unidad especializada de atención</p>
+        </div>
+        <div class="footer-section">
+            <p>Av. P.º de la Reforma 2654, Lomas Altas, Miguel Hidalgo, 11950 Ciudad de México, CDMX.</p>
+            <p>55 94 09 64 83 / 84</p>
+            <p>55 15 64 33 13</p>
+        </div>
+    </footer>
+
+    
+    <script src="main.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKp-vpw9i0NpGISnvZgE9n2uUtWs3obo8&callback=initMap&libraries=marker">
+    </script> 
+</body>
+</html>

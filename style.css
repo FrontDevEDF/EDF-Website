@@ -1,0 +1,814 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn{
+    font-size: 16px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FFB200;
+    cursor: pointer;
+    border: 1px solid #FFB200;
+}
+
+.btn:hover{
+    color: #FFB200;
+    background-color: #fff;
+    border: 1px solid #FFB200;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-btn{
+    display: flex;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-logo img{
+    max-height: 40px;
+}
+
+.navbar-toggle{
+    display: none;
+}
+
+.navbar-links{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li{
+    margin-right: 20px;
+}
+
+.navbar-links li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar-links a:hover{
+    color: #FFB200;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 720px; /* 100% del viewport height */
+    overflow: hidden;
+}
+
+#hero-video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cubrir todo el espacio del contenedor */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 1; /* Asegura que el contenido esté encima del video */
+}
+
+.hero-content h2, h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+.container-simulator{
+    height: 450px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 25px 0 0 0;
+}
+
+.simulator-content{
+    background-color: #FFF6E9;
+    height: 400px;
+    width: 95%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.simulator-text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.simulator-info{
+    background-color: #fff;
+    border-radius: 16px;
+    width: 60%;
+    height: 75%;
+}
+
+.column-one{
+    height: 33%;
+    /*border: 1px solid black;*/
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    width: 25%;
+}
+.two{
+    width: 25%;
+}
+.three{
+    width: 25%;
+}
+.four{
+    width: 25%;
+}
+
+.column-two{
+    height: 33%;
+    /*border: 1px solid black;*/
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.column-three{
+    height: 33%;
+    /*border: 1px solid black;*/
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Para que las cards se ajusten al ancho del contenedor */
+}
+
+.card {
+    width: calc(30% - 20px); /* Calculamos el ancho con margen entre las cards */
+    max-width: 30%; /* Ancho máximo para evitar que se estiren demasiado */
+    margin-bottom: 20px;
+    border-radius: 16px;
+    background-color: #FFF6E9;
+    color: #000000;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+.container-clientes {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: rgba(0, 0, 0, 0.5); */
+    color: #000000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.image-container, .image-container-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.image-container img, .image-container-2 img {
+    width: 25%;
+    height: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* .active, .dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner video{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+.text-container{
+    height: 275px;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-us-container{
+    text-align: center;
+}
+
+.container-vmv{
+    display: flex;
+    text-align: center;
+}
+
+
+
+
+
+.contact-container{
+    height: 400px;
+    background-image: url('./images/contact-image.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.form-container{
+    width: 50%;
+    /*background: #ffffff;*/
+    background-color: #FFF6E9;
+    padding: 30px 10px;
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map{
+    height: 300px;
+    width: 45%;
+    border-radius: 16px;
+}
+
+
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], select {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]{
+    font-size: 16px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FFB200;
+    cursor: pointer;
+    border: 1px solid #FFB200;
+}
+
+input[type="submit"]:hover{
+    color: #FFB200;
+    background-color: #fff;
+    border: 1px solid #FFB200;
+}
+
+
+
+
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: none;
+    margin: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+
+
+
+/* Mobile Styles */
+@media(max-width: 768px){
+    .navbar{
+        justify-content: space-between;
+    }
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar-btn{
+        display: none;
+    }
+
+    .navbar-toggle{
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle-icon {
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
+
+    .mobile-menu-active{
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    .mobile-links{
+        padding: 20px 0;
+    }
+
+    .mobile-links li{
+        margin-bottom: 15px;
+    }
+
+    .mobile-links li a{
+        color: #000000;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .mobile-links a:hover{
+        color: #FFB200;
+    }
+
+
+
+
+    .hero-content {
+        width: 80%; 
+        padding: 20px; 
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; 
+    }
+
+    .hero-content .btn {
+        font-size: 1rem;
+    }
+
+
+
+
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .banner video{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+
+
+    .container-simulator {
+        height: 550px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*padding: 25px 0;*/
+    }
+
+    .simulator-content {
+        background-color: #FFF6E9;
+        height: 530px;
+        width: 95%;
+        max-width: 600px; /* Ancho máximo para evitar que se estire demasiado en pantallas grandes */
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column; /* Cambiado a column para ajustar mejor en móviles */
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px; /* Ajuste de padding para móviles */
+    }
+
+    .simulator-text {
+        width: 100%; /* Ocupa el ancho completo en móviles */
+        height: auto; /* Ajuste de altura automática */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Centrado de texto en móviles */
+        text-align: center; /* Alineación de texto centrada */
+        padding: 20px 0; /* Añadido padding arriba y abajo */
+    }
+
+    .simulator-text p{
+        margin: 5px 0px;
+    }
+
+    .simulator-info {
+        background-color: #fff;
+        border-radius: 16px;
+        width: 100%; /* Ocupa el ancho completo en móviles */
+        height: auto; /* Ajuste de altura automática */
+        padding: 15px; /* Ajuste de padding para móviles */
+        margin-bottom: 20px;
+    }
+
+    .column-one, .column-two, .column-three {
+        height: auto; /* Ajuste de altura automática */
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Centrado vertical de elementos */
+        padding: 10px 0; /* Añadido padding arriba y abajo */
+    }
+
+    .one, .two, .three, .four {
+        width: 100%; /* Ocupa el ancho completo en móviles */
+        margin-bottom: 10px; /* Espacio entre elementos */
+        font-size: 13px;
+    }
+
+
+
+
+
+
+
+    .text-container{
+        height: auto;
+        margin: 15px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .about-us-container{
+        text-align: center;
+    }
+    
+    .container-vmv{
+        display: block;
+        text-align: center;
+    }
+
+    .container-vmv h3{
+        margin: 10px;
+    }
+
+
+
+
+
+
+    .contact-container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 5px;
+        border: none;
+    }
+
+    .form-container{
+        width: 90%;
+    }
+
+    #map{
+        margin-top: 20px;
+        height: 300px;
+        width: 90%;
+    }
+
+
+
+
+    .footer-section {
+        flex-basis: 100%;
+    }
+}
+
+/* Estilo del hero banner */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/avp-image.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Altura de la ventana gráfica */
+    color: white;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .additional-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .additional-text p {
+        font-size: 0.875rem;
+    }
+}
+
+
+/* Estilo de la sección de texto adicional */
+.additional-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Color de fondo claro para la sección */
+    color: #333; /* Color de texto oscuro para contraste */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.additional-text h3 {
+    font-size: 1.75rem; /* Tamaño de fuente del encabezado */
+    margin: 0 0 20px 0; /* Espaciado inferior para separar del párrafo */
+    color: #444; /* Color de texto del encabezado */
+}
+
+.additional-text p {
+    font-size: 1rem; /* Tamaño de fuente del párrafo */
+    margin: 0 0 15px 0; /* Espaciado inferior para separar los párrafos */
+    max-width: 800px; /* Ancho máximo para mejorar la legibilidad */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.additional-text p:first-of-type {
+    margin-top: 0; /* El primer párrafo no necesita margen superior */
+}
+
+.additional-text p:last-of-type {
+    margin-bottom: 0; /* El último párrafo no necesita margen inferior */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .additional-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .additional-text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .additional-text h3 {
+        font-size: 1.25rem;
+    }
+
+    .additional-text p {
+        font-size: 0.875rem;
+    }
+}
